@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CareerTrack - Add Application</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="hero">
+    <h1> CareerTrack</h1>
+    <p>Track your job journey. Stay consistent. Land your dream offer.</p>
+  </div>
+
+  <div class="container">
+
+    <div class="card form-card">
+      <h2>Add New Application</h2>
+      <form id="jobForm">
+        <input type="text" name="company_name" placeholder="Company Name" required>
+        <input type="text" name="role" placeholder="Role" required>
+        <input type="date" name="applied_date" required>
+
+      <select name="status" required>
+  <option value="" disabled selected>Select Status</option>
+  <option value="Applied">Applied</option>
+  <option value="Interview">Interview</option>
+  <option value="Rejected">Rejected</option>
+  <option value="Offer">Offer</option>
+</select>
+
+        <button type="submit">Add Application</button>
+      </form>
+    </div>
+
+    <div class="dashboard-link">
+      <a href="dashboard.html">Go to Dashboard →</a>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

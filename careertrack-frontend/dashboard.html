@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CareerTrack - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="top-nav">
+  <h2>CareerTrack</h2>
+
+  <div class="nav-links">
+    <a href="index.html">Add Application</a>
+    <a href="dashboard.html">Dashboard</a>
+  </div>
+</div>
+
+  <div class="container">
+    <h1>  Dashboard</h1>
+    <div class="card welcome-card">
+  <h2>Welcome Back 👋</h2>
+  <!-- <p>Stay consistent. Small steps daily lead to big offers.</p> -->
+</div>
+
+    <!-- Reminder Banner -->
+    <div id="reminderBanner" class="reminder hidden">
+      🌿 You haven’t applied today. Take a breath and apply at least one job 🚀
+    </div>
+
+    <!-- Stats Cards -->
+   <div class="card stats-card">
+  <h2>📊 Total Applications</h2>
+  <p id="totalCount">0</p>
+</div>
+
+<div class="card stats-card">
+  <h2>📅 Today's Applications</h2>
+  <p id="todayCount">0</p>
+</div> 
+    <!-- <div class="card">
+  <h2>Application Status Overview</h2>
+  <canvas id="statusChart"></canvas>
+</div> -->
+<div class="card">
+  <h2>Application Activity</h2>
+  <div id="activityGrid" class="activity-grid"></div>
+</div>
+
+    <!-- Applications Table -->
+    <div class="card">
+      <h2>Applications</h2>
+
+      <div class="table-container">
+        <table id="applicationsTable">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:20px;">
+      <a href="index.html">← Add New Application</a>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
